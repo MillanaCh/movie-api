@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+* { 
+  margin: 0;
+  padding: 0;
+  font-family: 'League Spartan', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: auto
+}
+.movies{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 60px 0
 }
 
-.App-link {
-  color: #61dafb;
+.actor{
+  max-width: 23%;
+  box-shadow: 5px 8px 4px rgb(153, 248, 248);
+  margin: 10px auto
+  /* border: 4px solid rgb(153, 248, 248); */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title{
+  text-align: center;
+  background-color: rgb(153, 248, 248);
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px
+  ;
+}
+.actor-name{
+  font-size: 30px;
+  color:rgb(233, 212, 119)
+}
+.img-actor{
+  margin: 0 auto
+}
+.known-for{
+  font-size: 25px;
+}
+.eachFilm{
+  font-size: 15px;
+}
+.film{
+  width:120px;
+  height: 165px;
+  padding: 10px;
+  display: inline-block;
+  justify-content: space-around;
+}
+.star-photo{
+  width:150px;
+  margin: 5px 140px;
 }
